@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-  name: "NMapsMap",
+  name: "TassPods",
   defaultLocalization: "ko",
   platforms: [
     .iOS(.v13),
