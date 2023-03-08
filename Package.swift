@@ -25,17 +25,17 @@ let package = Package(
   targets: [
     .binaryTarget(
       name: "NMapsMap",
-      url: "https://tass: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@github.com/viva-tass/pods/releases/download/1.0.0/NMapsMap.xcframework.zip",
+      url: "https://github.com/viva-tass/pods/releases/download/1.0.0/NMapsMap.xcframework.zip",
       checksum: "eef16eed21cc18e8789dc622ff0e723b7e13398fdc965a36289bcba19a3cefe2"
     ),
     .binaryTarget(
       name: "NMapsGeometry",
-      url: "https://tass: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@github.com/viva-tass/pods/releases/download/1.0.0/NMapsGeometry.xcframework.zip",
+      url: "https://github.com/viva-tass/pods/releases/download/1.0.0/NMapsGeometry.xcframework.zip",
       checksum: "0567dfbc378d940da87925e5389184ff6db7af7039fe0816a3093efd40e4091a"
     ),
     .binaryTarget(
       name: "NaverThirdPartyLogin",
-      url: "https://tass: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@github.com/viva-tass/pods/releases/download/1.0.0/NaverThirdPartyLogin.xcframework.zip",
+      url: "https://github.com/viva-tass/pods/releases/download/1.0.0/NaverThirdPartyLogin.xcframework.zip",
       checksum: "7d56278cd14d4f30503e613c093304ffa5dacd76a4ea37d2642967fd1035eed2"
     ),
   ]
