@@ -2,30 +2,41 @@
 import PackageDescription
 
 let package = Package(
-    name: "NMapsMap",
-    defaultLocalization: "ko",
-    platforms: [
-        .iOS(.v13),
-    ],
-    products: [
-        .library(
-            name: "NMapsMap",
-            targets: [
-                "NMapsMap",
-                "NMapsGeometry"
-            ]
-        ),
-    ],
-    targets: [
-        .binaryTarget(
-            name: "NMapsMap",
-            url: "https://github.com/jaemyeong/NMapsMap/releases/download/3.16.2/NMapsMap.xcframework.zip",
-            checksum: "137f99021527b07b7735a670e2c5592c2c453f9c78efc69293d3bc6fe742f7e0"
-        ),
-        .binaryTarget(
-            name: "NMapsGeometry",
-            url: "https://github.com/jaemyeong/NMapsGeometry/releases/download/1.0.1/NMapsGeometry.xcframework.zip",
-            checksum: "5b2440242ed4a7e18b941b4e491a8899e980a68a00a039323ca9c4ac5dd77613"
-        ),
-    ]
+  name: "NMapsMap",
+  defaultLocalization: "ko",
+  platforms: [
+    .iOS(.v13),
+  ],
+  products: [
+    .library(
+      name: "NMapsMap",
+      targets: [
+        "NMapsMap",
+        "NMapsGeometry"
+      ]
+    ),
+    .library(
+      name: "NaverThirdPartyLogin",
+      targets: [
+        "NaverThirdPartyLogin",
+      ]
+    ),
+  ],
+  targets: [
+    .binaryTarget(
+      name: "NMapsMap",
+      url: "https://tass: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@github.com/viva-tass/pods/releases/download/1.0.0/NMapsMap.xcframework.zip",
+      checksum: "eef16eed21cc18e8789dc622ff0e723b7e13398fdc965a36289bcba19a3cefe2"
+    ),
+    .binaryTarget(
+      name: "NMapsGeometry",
+      url: "https://tass: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@github.com/viva-tass/pods/releases/download/1.0.0/NMapsGeometry.xcframework.zip",
+      checksum: "0567dfbc378d940da87925e5389184ff6db7af7039fe0816a3093efd40e4091a"
+    ),
+    .binaryTarget(
+      name: "NaverThirdPartyLogin",
+      url: "https://tass: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@github.com/viva-tass/pods/releases/download/1.0.0/NaverThirdPartyLogin.xcframework.zip",
+      checksum: "7d56278cd14d4f30503e613c093304ffa5dacd76a4ea37d2642967fd1035eed2"
+    ),
+  ]
 )
